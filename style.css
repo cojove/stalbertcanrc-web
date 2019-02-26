@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-wrapper {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    color: white;
+    
+}
+
+.header-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.showcase {
+    background: url("images/bless-pier.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.showcase-verse-text {
+    font-size: 4.5rem;
+    text-shadow: 2px 2px black;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.showcase-verse-ref {
+    font-size: 2rem;
+    text-align: right;
+}
+
+.showcase-buttons {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.showcase-buttons-button {
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 25px;
+    margin: 0 50px;
+    border-radius: 20px;
+}
+
+.showcase-buttons-button:hover {
+    background-color: white;
+}
+
+.showcase-buttons-button a {
+    font-size: 2rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+#about-god {
+    width: 1200px;
+    margin: auto;
+}
