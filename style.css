@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 0 500px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -94,4 +94,21 @@ body {
 #about-god {
     width: 1200px;
     margin: auto;
+}
+
+p, li {
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    line-height: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.key-point {
+    border: 1px solid grey;
+    background-color: grey;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
 }
