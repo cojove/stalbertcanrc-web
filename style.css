@@ -50,6 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 1200px;
+    padding: 0 50px;
     height: 90vh;
     margin: auto;
     text-align: center;
@@ -57,7 +58,7 @@ body {
 }
 
 .showcase-verse-text {
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-shadow: 2px 2px black;
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
@@ -91,13 +92,23 @@ body {
     text-decoration: none;
 }
 
-#about-god {
+#about-god, #our-church {
     width: 1200px;
+    padding: 0 50px;
     margin: auto;
 }
 
+.about-god-content, .our-church-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-god-intro {
+    padding-right: 50px;
+}
+
 p, li {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     letter-spacing: 0.03rem;
     line-height: 2rem;
     font-family: "Open Sans", sans-serif;
@@ -105,10 +116,23 @@ p, li {
 
 .key-point {
     border: 1px solid grey;
+    border-radius: 10px;
     background-color: grey;
     color: white;
     margin: 10px 0;
     padding: 10px;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     letter-spacing: 0.03rem;
+    font-family: Laila, sans-serif;
+}
+
+.our-church-contact {
+    background-color: grey;
+    color: white;
+    padding: 0 30px;
+    border-radius: 10px;
+}
+
+.our-church-contact h3 {
+    font-variant: small-caps;
 }
