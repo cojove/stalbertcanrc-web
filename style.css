@@ -3,8 +3,8 @@
 }
 
 body {
-    margin: 0 0 500px;
-    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -24,7 +24,7 @@ body {
 
 .header-nav {
     color: white;
-    
+
 }
 
 .header-nav a {
@@ -51,17 +51,19 @@ body {
     align-items: center;
     width: 1200px;
     padding: 0 50px;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     text-align: center;
     color: white;
 }
 
 .showcase-verse-text {
-    font-size: 4rem;
-    text-shadow: 2px 2px black;
+    font-size: 3rem;
+    text-shadow: 1.5px 1.5px black;
     font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 4.5rem;
 }
 
 .showcase-verse-ref {
@@ -71,7 +73,7 @@ body {
 
 .showcase-buttons {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .showcase-buttons-button {
@@ -92,47 +94,116 @@ body {
     text-decoration: none;
 }
 
-#about-god, #our-church {
+.main-wrapper {
     width: 1200px;
-    padding: 0 50px;
     margin: auto;
 }
 
-.about-god-content, .our-church-content {
+#about-god,
+#our-church {
+    padding: 40px 50px;
+}
+
+.about-god-content,
+.our-church-content {
     display: flex;
     justify-content: space-between;
 }
 
-.about-god-intro {
-    padding-right: 50px;
+h2 {
+    font-variant: small-caps;
+    font-size: 2rem;
 }
 
-p, li {
+.quote {
+    font-family: Laila, sans-serif;
+}
+
+.about-god-intro {
+    padding-right: 75px;
+}
+
+p {
     font-size: 1.1rem;
-    letter-spacing: 0.03rem;
-    line-height: 2rem;
-    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.05rem;
+    line-height: 1.65rem;
 }
 
 .key-point {
-    border: 1px solid grey;
+    border: 2px solid #464F6C;
     border-radius: 10px;
-    background-color: grey;
-    color: white;
+    background-color: rgb(245, 245, 255);
+    /* color: #464F6C; */
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px 25px;
     font-size: 1.1rem;
     letter-spacing: 0.03rem;
     font-family: Laila, sans-serif;
 }
 
+#our-church h2 {
+    padding-bottom: 20px;
+}
+
 .our-church-contact {
-    background-color: grey;
-    color: white;
-    padding: 0 30px;
+    border: 2px solid #464F6C;
     border-radius: 10px;
+    background-color: rgb(245, 245, 255);
+    padding: 10px 40px;
 }
 
 .our-church-contact h3 {
     font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+.our-church-about {
+    display: flex;
+    margin: 75px 0;
+}
+
+.our-church-about-info {
+    margin-left: 75px;
+}
+
+.our-church-about-info p:first-child {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #464F6C;
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    letter-spacing: 0.15rem;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    margin-right: 75px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin: 15px;
+    background-color: #464F6C;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.25rem;
+}
+
+.button:hover {
+    background-color: #0b2b57;
+}
+
+.flex-p {
+    display: flex;
+    justify-content: center;
 }
