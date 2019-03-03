@@ -77,22 +77,20 @@ body {
 }
 
 .showcase-buttons-button {
-    border: 3px solid white;
-    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px solid rgb(83, 67, 55);
+    background-color: rgba(108, 86, 70, 0.9);
     padding: 10px 25px;
     margin: 0 50px;
     border-radius: 20px;
+    font-size: 2rem;
+    color: white;
 }
 
 .showcase-buttons-button:hover {
-    background-color: white;
+    background-color: rgb(83, 67, 55);
+    cursor: pointer;
 }
 
-.showcase-buttons-button a {
-    font-size: 2rem;
-    color: #333333;
-    text-decoration: none;
-}
 
 .main-wrapper {
     width: 1200px;
@@ -117,6 +115,14 @@ h2 {
 
 .quote {
     font-family: Laila, sans-serif;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.quote-ref {
+    text-align: right;
+    margin-top: 0;
+    font-family: Laila, sans-serif;
 }
 
 .about-god-intro {
@@ -130,10 +136,9 @@ p {
 }
 
 .key-point {
-    border: 2px solid #464F6C;
     border-radius: 10px;
-    background-color: rgb(245, 245, 255);
-    /* color: #464F6C; */
+    color: white;
+    background-color: #464F6C;
     margin: 10px 0;
     padding: 15px 25px;
     font-size: 1.1rem;
@@ -146,9 +151,9 @@ p {
 }
 
 .our-church-contact {
-    border: 2px solid #464F6C;
     border-radius: 10px;
-    background-color: rgb(245, 245, 255);
+    color: white;
+    background-color: #464F6C;
     padding: 10px 40px;
 }
 
@@ -193,14 +198,14 @@ p {
     border-radius: 10px;
     padding: 10px 40px;
     margin: 15px;
-    background-color: #464F6C;
+    background-color: rgb(108, 86, 70);
     color: white;
     text-decoration: none;
     letter-spacing: 0.25rem;
 }
 
 .button:hover {
-    background-color: #0b2b57;
+    background-color: rgb(83, 67, 55);
 }
 
 .flex-p {
