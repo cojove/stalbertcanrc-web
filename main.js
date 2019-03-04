@@ -10,7 +10,8 @@ function scrollToId(id) {
 // Rest API
 fetch("https://app.churchsocial.com/api/sermons?limit=5", {
   headers: {
-    Authorization: "0e3caa43db49cc8729a8bfa91f177bf6",
-  }
+    Authorization: "0e3caa43db49cc8729a8bfa91f177bf6"
+  },
+    mode: "no-cors"
 }).then((rawData) => rawData.json())
 .then((jsonData) => console.log(jsonData));
