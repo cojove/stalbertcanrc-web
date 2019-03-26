@@ -2,34 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
-main {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -66,8 +38,9 @@ body {
     text-decoration: underline;
 }
 
+
 .showcase {
-    background: url("images/bless-pier.jpg") no-repeat center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("images/trustle-bridge-st-ablert.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100vh;
 }
@@ -206,15 +179,14 @@ p {
 .footer {
     background-color: #464F6C;
     color: white;
-    padding: 20px;
 }
 
 .footer-wrapper {
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
     padding: 50px 0;
     letter-spacing: 0.15rem;
-    max-width: 500px;
+    width: 1200px;
     margin: auto;
 }
 
