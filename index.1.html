@@ -11,20 +11,20 @@
   <link rel="icon" href="images/logo-icon.png">
   
   <script>
-        var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-            targetUrl = 'https://app.churchsocial.com/api/sermons';
-        fetch(proxyUrl + targetUrl, {
-            headers: {Authorization: "0e3caa43db49cc8729a8bfa91f177bf6"}
-        })
-            .then(blob => blob.json())
-            .then(data => console.log(data));
+//         var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+//             targetUrl = 'https://app.churchsocial.com/api/sermons';
+//         fetch(proxyUrl + targetUrl, {
+//             headers: {Authorization: "0e3caa43db49cc8729a8bfa91f177bf6"}
+//         })
+//             .then(blob => blob.json())
+//             .then(data => console.log(data));
     
-//     fetch("https://app.churchsocial.com/api/sermons/14942", {
-//             headers: {
-//             Authorization: "0e3caa43db49cc8729a8bfa91f177bf6"
-//         }
-//         }).then((blob) => blob.json())
-//         .then((data) => console.log(data));
+    fetch("https://app.churchsocial.com/api/sermons/14942", {
+            headers: {
+            Authorization: "0e3caa43db49cc8729a8bfa91f177bf6"
+        }
+        }).then((blob) => blob.json())
+        .then((data) => console.log(data));
   </script>
   
 </head>
