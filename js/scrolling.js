@@ -1,17 +1,15 @@
-// Get closed navbar height
-const navHeight = $('#main-nav').height();
-
 // Animate to section id if coming from another page
 if (window.location.hash) {
   setTimeout(function () {
     $('html, body').animate({
-      scrollTop: $(window.location.hash).offset().top - navHeight
+      scrollTop: $(window.location.hash).offset().top - 58
     }, 600);
   }, 100);
 }
 
 // Smooth Scrolling
-$("#main-nav a, #call-to-action").on('click', function (event) {
+$("#main-nav a").on('click', function (event) {
+  console.log(this.hash);
   if (this.hash != "") {
     event.preventDefault();
 
@@ -20,7 +18,7 @@ $("#main-nav a, #call-to-action").on('click', function (event) {
     $('.navbar-collapse').collapse('hide');
 
     $('html, body').animate({
-      scrollTop: $(hash).offset().top - navHeight
+      scrollTop: $(hash).offset().top - 350
     }, 800);
   }
 });

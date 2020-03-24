@@ -9,7 +9,7 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   top: 0;
   left: 0;
@@ -91,7 +91,7 @@ a.navbar-brand {
 #sermons-showcase {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/stonewall.JPG');
   color: white;
-  padding-top: 8.5rem;
+  padding-top: 4.5rem;
   padding-bottom: 3rem;
   text-align: center;
 }

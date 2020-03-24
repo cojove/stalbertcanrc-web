@@ -30,7 +30,12 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light fixed-top">
+  <div class="alert alert-warning w-100 text-center mb-0">Due to the COVID-19 Pandemic, church services are currently
+    limited to
+    50
+    members.
+  </div>
+  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light sticky-top">
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <span class="main-brand">ST.ALBERT</span><br>
@@ -72,13 +77,14 @@
 
   <!-- Main Content - holds all page content -->
   <main>
+
     <!-- SHOWCASE -->
     <section id="showcase" class="showcase-light d-flex">
       <div class="text-white text-center m-auto container">
         <h1 class="display-4 mb-4">PROCLAIMING CHRIST</h1>
         <h1 class="sub-heading">in St. Albert</h1>
-        <p class="lead my-5">Worship with us Sundays at 10:00 am and 2:30 pm.</p>
-        <a id="call-to-action" class="btn btn-outline-light btn-lg" href="#join-us">Join Us</a>
+        <p class="lead mt-5">Worship with us Sundays at 10:00 am and 2:30 pm.</p>
+        <a id="call-to-action" class="btn btn-danger btn-lg" href="sermons.html">Listen to Sermons</a>
       </div>
     </section>
 
@@ -109,7 +115,7 @@
               federation website to
               learn more about what we believe.
             </p>
-            <a href="https://canrc.org/beliefs" target="_blank" class="btn btn-outline-danger btn-lg mt-4">Learn
+            <a href="https://canrc.org/beliefs" target="_blank" class="btn btn-danger btn-lg mt-4">Learn
               More...</a>
           </div>
           <div class="col-lg-6">
@@ -187,55 +193,23 @@
     </section>
 
     <!-- SERMONS -->
-    <section id="sermons-content" class="py-5 text-center">
-      <!-- SAMPLE SERMONS -->
-      <div class="container">
-        <div class="row pb-4">
-          <div class="col-md-6 mb-4 px-lg-5">
-            <div class="card border-secondary mx-auto mb-4">
-              <img src="img/dark-to-light-man-700x467.jpg" alt="Dark to Light Man" class="card-img-top">
-              <div class="card-header">
-                <h4 class="px-lg-5">Ruin. Redemption. Restoration.</h4>
-              </div>
-              <div class="card-body">
-                <h6 class="card-subtitle">Rev. Ken Wieske</h6>
-                <p class="card-text">John 3: 16</p>
-                <p class="card-test">Out of love, God gave His Son as the only hope for a world of death and ruin.</p>
-                <p class="card-text">
-                  <button class="btn btn-outline-dark" id="sermon-1">
-                    <i class="fas fa-microphone fa-lg"></i> Listen...
-                  </button>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 px-lg-5">
-            <div class="card border-secondary mx-auto mb-4">
-              <img src="img/growing-season-700x467.jpg" alt="Growing Season" class="card-img-top">
+    <section id="sermons-content" class="text-center">
+      <!-- ALL SERMONS -->
+      <div class="text-center pb-5">
+        <a href="sermons.html" class="btn btn-danger btn-lg">Sermon Archive</a>
+      </div>
 
-              <div class="card-header">
-                <h4>God Calls Us to a Life of True Worship</h4>
-              </div>
-              <div class="card-body">
-                <h6 class="card-subtitle">Rev. Ken Wieske</h6>
-                <p class="card-text">Psalm 50</p>
-                <p class="card-test">God calls us to a life of true worship: a humble sacrifice of thanksgiving to God.
-                </p>
-                <p class="card-text">
-                  <button class="btn btn-outline-dark" id="sermon-2">
-                    <i class="fas fa-microphone fa-lg" data-id="17437"></i> Listen...
-                  </button>
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="container px-lg-5 pb-5">
+        <h5>Rev. K. Wieske</h5>
+        <p>Sermon on Psalm 56</p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/CRVmHEmF2DE"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
       </div>
 
-      <!-- ALL SERMONS -->
-      <div class="text-center">
-        <a href="sermons.html" class="btn btn-outline-danger btn-lg">Sermon Archive</a>
-      </div>
+
 
     </section>
 
@@ -406,7 +380,6 @@
 
   <script src="js/scrolling.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/sample-sermons.js"></script>
 
 </body>
 

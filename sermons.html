@@ -30,7 +30,12 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light fixed-top">
+  <div class="alert alert-warning w-100 text-center mb-0">Due to the COVID-19 Pandemic, church services are currently
+    limited to
+    50
+    members.
+  </div>
+  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light sticky-top">
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <span class="main-brand">ST.ALBERT</span><br>
@@ -87,78 +92,31 @@
           <footer class="blockquote-footer">Mark 16: 15 <cite title="English Standard Version">(ESV)</cite>
           </footer>
         </blockquote>
+
+        <a href="https://www.youtube.com/stalbertcanadianreformedchurch" target="_blank"
+          class="btn btn-danger btn-large d-block mb-3"><i class="fab fa-youtube"></i> YouTube
+          Channel</a>
       </div>
 
-      <!-- SERMON SEARCH -->
-      <div class="container">
-        <div class="pb-3">
-          <select id="minister-select" class="form-control form-control-lg bg-dark text-white">
-            <option value="all-ministers">All Ministers</option>
-          </select>
-        </div>
+      <!-- SERMON EMBED FROM CHURCH SOCIAL -->
+      <div class="container mb-5">
+        <iframe src="https://app.churchsocial.com/public/church/0e3caa43db49cc8729a8bfa91f177bf6/sermons/embed"
+          style="width:100%; height:800px; background:white; border:solid 1px #e2e8f0;"></iframe>
       </div>
 
-      <!-- SERMON LIST -->
-      <div class="container">
-        <div id="sermons-column" class="pb-5"></div>
-      </div>
-    </section>
+      <!-- FOOTER -->
+      <footer id="page-footer" class="stone-wall text-white text-center mt-auto">
+        <p>
+          <span class="main-brand">ST.ALBERT</span><br>
+          <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
+        </p>
+        &copy; <span id="year"></span>
+      </footer>
 
-    <!-- FOOTER -->
-    <footer id="page-footer" class="stone-wall text-white text-center mt-auto">
-      <p>
-        <span class="main-brand">ST.ALBERT</span><br>
-        <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
-      </p>
-      &copy; <span id="year"></span>
-    </footer>
-
-    <!-- SERMON MODAL -->
-    <div class="modal fade" id="sermon-modal">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 id="date" class="modal-title"></h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <h5 id="author"></h5>
-            <ul id="passages">
-            </ul>
-            <p id="title"></p>
-
-            <div id="audio-container">
-              <h6>Audio</h6>
-              <p>
-                <audio id="audio" class="form-control" src="" controls>
-                </audio>
-              </p>
-            </div>
-
-            <div id="video-container">
-              <h6>Video</h6>
-              <p id="video" class="embed-responsive embed-responsive-4by3"></p>
-            </div>
-
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Arrow -->
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-      <i class="fas fa-chevron-up"></i>
-    </a>
+      <!-- Scroll to Top Arrow -->
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+        <i class="fas fa-chevron-up"></i>
+      </a>
   </main>
 
   <!-- Load JavaScript -->
@@ -171,7 +129,6 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
 
-  <script src="js/sermons.js"></script>>
   <script src="js/main.js"></script>
 </body>
 
