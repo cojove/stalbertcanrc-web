@@ -144,6 +144,10 @@ a.navbar-brand {
   color: #dfcfa7
 }
 
+#sample-sermon {
+  max-width: 768px;
+}
+
 #contact-us-content h4 {
   color: #dfcfa7;
 }
