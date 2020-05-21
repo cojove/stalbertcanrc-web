@@ -8,7 +8,7 @@ if (window.location.hash) {
 }
 
 // Smooth Scrolling
-$("#main-nav a").on('click', function (event) {
+$("#main-nav a, .alert a").on('click', function (event) {
   console.log(this.hash);
   if (this.hash != "") {
     event.preventDefault();
