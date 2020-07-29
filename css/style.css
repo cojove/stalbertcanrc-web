@@ -72,21 +72,6 @@ nav {
   color: #dfcfa7;
 }
 
-a.navbar-brand {
-  line-height: 1;
-}
-
-.main-brand {
-  font-size: 1.75rem;
-  letter-spacing: 0.7rem;
-}
-
-.sub-brand {
-  font-size: 0.8rem;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
-}
-
 /* SERMONS Show Case */
 #sermons-showcase {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/stonewall.JPG');
@@ -173,17 +158,15 @@ a.navbar-brand {
     width: 90%;
     margin: auto;
   }
+
+  #main-nav img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 400px) {
-  .main-brand {
-    font-size: 1.35rem;
-    letter-spacing: 0.3rem;
-  }
-
-  .sub-brand {
-    font-size: 0.6rem;
-    letter-spacing: 0.05rem;
+  #main-nav img {
+    height: 40px;
   }
 
   #showcase h1.display-4 {
