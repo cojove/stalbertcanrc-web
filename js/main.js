@@ -23,3 +23,10 @@ $(".modal").on("hide.bs.modal", function (e) {
   e.target.querySelector("audio").pause();
   $("iframe").attr("src", "");
 });
+
+// Toggle Plus/Minus on Bible Quizzing Header Buttons
+$(".collapse").on('show.bs.collapse', function () {
+  $(this).prev(".card-header").find(".fas").removeClass("fa-plus").addClass("fa-minus");
+}).on('hide.bs.collapse', function () {
+  $(this).prev(".card-header").find(".fas").removeClass("fa-minus").addClass("fa-plus");
+});
