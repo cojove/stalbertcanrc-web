@@ -145,6 +145,10 @@ nav {
   text-align: left;
 }
 
+#quizzing-content strong {
+  font-weight: 600;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
   #showcase h1.display-4 {
