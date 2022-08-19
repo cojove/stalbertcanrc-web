@@ -1,387 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-36025648-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36025648-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag('config', 'UA-36025648-1');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    gtag('config', 'UA-36025648-1');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+      src="https://kit.fontawesome.com/5da9f5ff62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300|Work+Sans:300"
+      rel="stylesheet"
+    />
 
-  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Work+Sans:300" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <title>St. Albert CanRC</title>
+  </head>
 
-  <title>St. Albert CanRC</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <div class="alert alert-warning w-100 text-center mb-0">
-    VBS 2022 is coming July 25-29.
-    <a href="./vbs.html">Learn more.</a>
-  </div>
-  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light sticky-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="img/StAlbertWebsiteLogo-01.png" alt="St. Albert CanRC Logo">
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto text-right">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">HOME <i class="fas fa-home"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-us-heading" class="nav-link">ABOUT US <i class="fas fa-info-circle"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="#join-us" class="nav-link">JOIN US <i class="fas fa-users"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="#sermons-heading" class="nav-link">SERMONS <i class="fas fa-microphone"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-us" class="nav-link">CONTACT US <i class="fas fa-at"></i></a>
-          </li>
-          <hr class="my-0 mr-0" style="border: 1px solid grey; width: 10rem">
-          <li class="nav-item">
-            <a href="https://app.churchsocial.com/login" class="nav-link" target="_blank">MEMBER LOGIN <i
-                class="fas fa-unlock"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="sermons.html" class="nav-link">SERMON ARCHIVE <i class="fas fa-microphone"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="bible-quizzing.html" class="nav-link">BIBLE QUIZZING <i class="fas fa-bible"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main Content - holds all page content -->
-  <main>
-
-    <!-- SHOWCASE -->
-    <section id="showcase" class="showcase-light d-flex">
-      <div class="text-white text-center m-auto container">
-        <h1 class="display-4 mb-4">PROCLAIMING CHRIST</h1>
-        <h1 class="sub-heading">in St. Albert</h1>
-        <p class="lead mt-5">Worship with us Sundays at 10:00 am and 3:00 pm.</p>
-        <a id="call-to-action" class="btn btn-danger btn-lg" href="sermons.html">Listen to Sermons</a>
-      </div>
-    </section>
-
-    <!-- ABOUT US HEADING-->
-    <section id="about-us-heading">
-      <div class="container py-5 text-center">
-        <h2 class="mb-5">About Us</h2>
-        <!-- BIBLE PASSSAGE -->
-        <blockquote class="blockquote w-75 m-auto">
-          <p class="mb-0 font-italic">Your word is a lamp to my feet and a light to my path.</p>
-          <footer class="blockquote-footer">Psalm 119: 105 <cite title="English Standard Version">(ESV)</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section class="py-4 py-lg-5">
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      id="main-nav"
+      class="navbar navbar-expand-xs navbar-light bg-light sticky-top"
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 align-self-center text-center text-lg-left mb-5">
-            <p>Our church believes that the Holy Bible is the infallible, inerrant Word of God. Our
-              roots are from the
-              Great Reformation of the sixteenth century and our aim is to exalt the Triune God by faithfully
-              proclaiming the gospel of Jesus Christ.</p>
-            <p>
-              We are a member of the Canadian and American Reformed Churches. Please visit our
-              federation website to
-              learn more about what we believe.
-            </p>
-            <a href="https://canrc.org/beliefs" target="_blank" class="btn btn-danger btn-lg mt-4">Learn
-              More...</a>
-          </div>
-          <div class="col-lg-6">
-            <img src="img/church-building-700x407.jpg" alt="Church Building" class="img-fluid">
-          </div>
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="img/StAlbertWebsiteLogo-01.png"
+            alt="St. Albert CanRC Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto text-right">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"
+                >HOME <i class="fas fa-home"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-us-heading" class="nav-link"
+                >ABOUT US <i class="fas fa-info-circle"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#join-us" class="nav-link"
+                >JOIN US <i class="fas fa-users"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#sermons-heading" class="nav-link"
+                >SERMONS <i class="fas fa-microphone"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-us" class="nav-link"
+                >CONTACT US <i class="fas fa-at"></i
+              ></a>
+            </li>
+            <hr
+              class="my-0 mr-0"
+              style="border: 1px solid grey; width: 10rem"
+            />
+            <li class="nav-item">
+              <a
+                href="https://app.churchsocial.com/login"
+                class="nav-link"
+                target="_blank"
+                >MEMBER LOGIN <i class="fas fa-unlock"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="sermons.html" class="nav-link"
+                >SERMON ARCHIVE <i class="fas fa-microphone"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="bible-quizzing.html" class="nav-link"
+                >BIBLE QUIZZING <i class="fas fa-bible"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <!-- JOIN US GREY SECTION -->
-    <section id="join-us" class="text-white">
-      <!-- JOIN US HEADING-->
-      <section id="join-us-heading">
+    <!-- Main Content - holds all page content -->
+    <main>
+      <!-- SHOWCASE -->
+      <section id="showcase" class="showcase-light d-flex">
+        <div class="text-white text-center m-auto container">
+          <h1 class="display-4 mb-4">PROCLAIMING CHRIST</h1>
+          <h1 class="sub-heading">in St. Albert</h1>
+          <p class="lead mt-5">
+            Worship with us Sundays at 10:00 am and 3:00 pm.
+          </p>
+          <a
+            id="call-to-action"
+            class="btn btn-danger btn-lg"
+            href="sermons.html"
+            >Listen to Sermons</a
+          >
+        </div>
+      </section>
+
+      <!-- ABOUT US HEADING-->
+      <section id="about-us-heading">
         <div class="container py-5 text-center">
-          <h2 class="mb-5">Join Us</h2>
+          <h2 class="mb-5">About Us</h2>
           <!-- BIBLE PASSSAGE -->
           <blockquote class="blockquote w-75 m-auto">
-            <p class="mb-0 font-italic">I was glad when they said to me, "Let us go to the house of the LORD!"</p>
-            <footer class="blockquote-footer text-white">Psalm 122: 1 <cite
-                title="English Standard Version">(ESV)</cite>
+            <p class="mb-0 font-italic">
+              Your word is a lamp to my feet and a light to my path.
+            </p>
+            <footer class="blockquote-footer">
+              Psalm 119: 105 <cite title="English Standard Version">(ESV)</cite>
             </footer>
           </blockquote>
         </div>
       </section>
 
-      <!-- JOIN US -->
-      <section class="py-5">
+      <!-- ABOUT US -->
+      <section class="py-4 py-lg-5">
         <div class="container">
           <div class="row">
-            <div id="map" class="col-lg-6 embed-responsive embed-responsive-4by3 mb-5">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31811.99083507515!2d-113.70497160262371!3d53.656950209971384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02913c0737159%3A0xc0cb4f03956808fc!2sSt.Albert%20Canadian%20Reformed%20Church!5e0!3m2!1sen!2sca!4v1575611831358!5m2!1sen!2sca"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                class="embed-responsive-item"></iframe>
-            </div>
-            <div class="col-lg-6 align-self-center text-center text-lg-left mb-5 pl-lg-5">
-              <h5>Location</h5>
+            <div
+              class="col-lg-6 align-self-center text-center text-lg-left mb-5"
+            >
               <p>
-                54203 Range Road 261<br>
-                Sturgeon County, Alberta<br>
-                <em class="text-white small">Northeast corner of Range Road 261 and<br>
-                  Highway 633 (Villeneuve Rd)</em>
+                Our church believes that the Holy Bible is the infallible,
+                inerrant Word of God. Our roots are from the Great Reformation
+                of the sixteenth century and our aim is to exalt the Triune God
+                by faithfully proclaiming the gospel of Jesus Christ.
               </p>
-              <h5 class="mt-4">Service Times</h5>
-              <p>Sundays at 10:00 AM and 3:00 PM</p>
-
-              <h5 class="mt-4">What to Expect</h5>
               <p>
-                Central to our worship service are the preaching of the Holy Bible, congregational singing and prayer.
-                The
-                intent is to praise God; He is the focus of the service.
+                We are a member of the Canadian and American Reformed Churches.
+                Please visit our federation website to learn more about what we
+                believe.
               </p>
-              <p>When you join us for worship, ushers are located at the entrance to the auditorium and will be able to
-                assist you with seating and answer any questions you may have.</p>
+              <a
+                href="https://canrc.org/beliefs"
+                target="_blank"
+                class="btn btn-danger btn-lg mt-4"
+                >Learn More...</a
+              >
             </div>
-
+            <div class="col-lg-6">
+              <img
+                src="img/church-building-700x407.jpg"
+                alt="Church Building"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </section>
-    </section>
 
+      <!-- JOIN US GREY SECTION -->
+      <section id="join-us" class="text-white">
+        <!-- JOIN US HEADING-->
+        <section id="join-us-heading">
+          <div class="container py-5 text-center">
+            <h2 class="mb-5">Join Us</h2>
+            <!-- BIBLE PASSSAGE -->
+            <blockquote class="blockquote w-75 m-auto">
+              <p class="mb-0 font-italic">
+                I was glad when they said to me, "Let us go to the house of the
+                LORD!"
+              </p>
+              <footer class="blockquote-footer text-white">
+                Psalm 122: 1 <cite title="English Standard Version">(ESV)</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </section>
 
-    <!-- SERMONS HEADING -->
-    <section id="sermons-heading">
-      <div class="container py-5 text-center">
-        <h2 class="mb-5">Sermons</h2>
-        <!-- BIBLE PASSSAGE -->
-        <blockquote class="blockquote w-75 m-auto">
-          <p class="mb-0 font-italic">How then will they call on him in whom they have not believed? And how are they to
-            believe in him of whom they have never heard? And how are they to hear without someone preaching?</p>
-          <footer class="blockquote-footer">Romans 10: 14 <cite title="English Standard Version">(ESV)</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- SERMONS -->
-    <section id="sermons-content" class="text-center">
-      <!-- ALL SERMONS -->
-      <div class="text-center pb-5">
-        <a href="sermons.html" class="btn btn-danger btn-lg">Sermon Archive</a>
-      </div>
-
-      <div class="container px-lg-5 pb-5">
-        <h5>Rev. K. Wieske</h5>
-        <p>Sermon on Psalm 56</p>
-        <div id="sample-sermon" class="embed-responsive embed-responsive-16by9 mx-auto">
-          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/CRVmHEmF2DE"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-
-
-
-    </section>
-
-    <!-- CONTACT US GREY SECTION -->
-    <section id="contact-us" class="text-white">
-      <!-- CONTACT US HEADING-->
-      <section id="contact-us-heading">
-        <div class="container py-5 text-center">
-          <h2>Contact Us</h2>
-        </div>
-      </section>
-
-      <!-- CONTACT US -->
-      <section id="contact-us-content">
-        <div class="container text-center pb-5">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="p-4">
-                <h4><i class="fas fa-at"></i> Email</h4>
-                <p>info@stalbertcanrc.com<br>
-                  webmaster@stalbertcanrc.com</p>
-
+        <!-- JOIN US -->
+        <section class="py-5">
+          <div class="container">
+            <div class="row">
+              <div
+                id="map"
+                class="col-lg-6 embed-responsive embed-responsive-4by3 mb-5"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31811.99083507515!2d-113.70497160262371!3d53.656950209971384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02913c0737159%3A0xc0cb4f03956808fc!2sSt.Albert%20Canadian%20Reformed%20Church!5e0!3m2!1sen!2sca!4v1575611831358!5m2!1sen!2sca"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  class="embed-responsive-item"
+                ></iframe>
               </div>
-              <div class="p-4">
-                <h4><i class="far fa-envelope"></i> Mailing Address</h4>
+              <div
+                class="col-lg-6 align-self-center text-center text-lg-left mb-5 pl-lg-5"
+              >
+                <h5>Location</h5>
                 <p>
-                  Box 46 St. Albert Main<br>
-                  St. Albert, AB T8N 1N2
+                  54203 Range Road 261<br />
+                  Sturgeon County, Alberta<br />
+                  <em class="text-white small"
+                    >Northeast corner of Range Road 261 and<br />
+                    Highway 633 (Villeneuve Rd)</em
+                  >
                 </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="p-4">
-                <h4><i class="fas fa-map-marker-alt"></i> Church Address</h4>
-                <p>
-                  54203 Range Road 261<br>
-                  Sturgeon County, AB<br>
-                  Canada T8T 0X2<br>
-                </p>
-              </div>
-              <div class="p-4">
-                <h4><i class="far fa-clock"></i> Service Times</h4>
+                <h5 class="mt-4">Service Times</h5>
                 <p>Sundays at 10:00 AM and 3:00 PM</p>
 
+                <h5 class="mt-4">What to Expect</h5>
+                <p>
+                  Central to our worship service are the preaching of the Holy
+                  Bible, congregational singing and prayer. The intent is to
+                  praise God; He is the focus of the service.
+                </p>
+                <p>
+                  When you join us for worship, ushers are located at the
+                  entrance to the auditorium and will be able to assist you with
+                  seating and answer any questions you may have.
+                </p>
               </div>
             </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- SERMONS HEADING -->
+      <section id="sermons-heading">
+        <div class="container py-5 text-center">
+          <h2 class="mb-5">Sermons</h2>
+          <!-- BIBLE PASSSAGE -->
+          <blockquote class="blockquote w-75 m-auto">
+            <p class="mb-0 font-italic">
+              How then will they call on him in whom they have not believed? And
+              how are they to believe in him of whom they have never heard? And
+              how are they to hear without someone preaching?
+            </p>
+            <footer class="blockquote-footer">
+              Romans 10: 14 <cite title="English Standard Version">(ESV)</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- SERMONS -->
+      <section id="sermons-content" class="text-center">
+        <!-- ALL SERMONS -->
+        <div class="text-center pb-5">
+          <a href="sermons.html" class="btn btn-danger btn-lg"
+            >Sermon Archive</a
+          >
+        </div>
+
+        <div class="container px-lg-5 pb-5">
+          <h5>Rev. K. Wieske</h5>
+          <p>Sermon on Psalm 56</p>
+          <div
+            id="sample-sermon"
+            class="embed-responsive embed-responsive-16by9 mx-auto"
+          >
+            <iframe
+              class="embed-responsive-item"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CRVmHEmF2DE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
 
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="page-footer" class="stone-wall text-white text-center">
-      <p>
-        <span class="main-brand">ST.ALBERT</span><br>
-        <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
-      </p>
-      &copy; <span id="year"></span>
-
-    </footer>
-
-    <!-- MODALS -->
-
-    <!-- John 3:16 Sermon Modal -->
-    <div class="modal fade" id="sermon-modal-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">John 3:16</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <!-- CONTACT US GREY SECTION -->
+      <section id="contact-us" class="text-white">
+        <!-- CONTACT US HEADING-->
+        <section id="contact-us-heading">
+          <div class="container py-5 text-center">
+            <h2>Contact Us</h2>
           </div>
+        </section>
 
-          <!-- Modal body -->
-          <div class="modal-body">
-            <h5>Rev. Ken Wieske</h5>
-            <ul>
-              <li>John 3:16</li>
-              <li>Psalm 91</li>
-              <li>John 3:1-21</li>
-            </ul>
-            <p>Out of love, God gave His Son as the only hope for a world of death and ruin.</p>
+        <!-- CONTACT US -->
+        <section id="contact-us-content">
+          <div class="container text-center pb-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="p-4">
+                  <h4><i class="fas fa-at"></i> Email</h4>
+                  <p>
+                    info@stalbertcanrc.com<br />
+                    webmaster@stalbertcanrc.com
+                  </p>
+                </div>
+                <div class="p-4">
+                  <h4><i class="far fa-envelope"></i> Mailing Address</h4>
+                  <p>
+                    Box 46 St. Albert Main<br />
+                    St. Albert, AB T8N 1N2
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4">
+                  <h4><i class="fas fa-map-marker-alt"></i> Church Address</h4>
+                  <p>
+                    54203 Range Road 261<br />
+                    Sturgeon County, AB<br />
+                    Canada T8T 0X2<br />
+                  </p>
+                </div>
+                <div class="p-4">
+                  <h4><i class="far fa-clock"></i> Service Times</h4>
+                  <p>Sundays at 10:00 AM and 3:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
 
-            <div id="audio-container-1">
-              <h6>Audio</h6>
+      <!-- FOOTER -->
+      <footer id="page-footer" class="stone-wall text-white text-center">
+        <p>
+          <span class="main-brand">ST.ALBERT</span><br />
+          <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
+        </p>
+        &copy; <span id="year"></span>
+      </footer>
+
+      <!-- MODALS -->
+
+      <!-- John 3:16 Sermon Modal -->
+      <div class="modal fade" id="sermon-modal-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">John 3:16</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h5>Rev. Ken Wieske</h5>
+              <ul>
+                <li>John 3:16</li>
+                <li>Psalm 91</li>
+                <li>John 3:1-21</li>
+              </ul>
               <p>
-                <audio class="form-control" src="" controls>
-                </audio>
+                Out of love, God gave His Son as the only hope for a world of
+                death and ruin.
               </p>
+
+              <div id="audio-container-1">
+                <h6>Audio</h6>
+                <p>
+                  <audio class="form-control" src="" controls></audio>
+                </p>
+              </div>
+
+              <div id="video-container-1">
+                <h6>Video</h6>
+                <p class="embed-responsive embed-responsive-4by3"></p>
+              </div>
             </div>
 
-            <div id="video-container-1">
-              <h6>Video</h6>
-              <p class="embed-responsive embed-responsive-4by3"></p>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-          </div>
-
         </div>
       </div>
-    </div>
 
-    <!-- Psalm 50 Sermon Modal -->
-    <div class="modal fade" id="sermon-modal-2">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <!-- Psalm 50 Sermon Modal -->
+      <div class="modal fade" id="sermon-modal-2">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Psalm 50</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
 
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Psalm 50</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <h5>Rev. Ken Wieske</h5>
-            <ul>
-              <li>Psalm 50</li>
-            </ul>
-            <p>God calls us to a life of true worship: a humble sacrifice of thanksiving.</p>
-
-            <div id="audio-container-2">
-              <h6>Audio</h6>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h5>Rev. Ken Wieske</h5>
+              <ul>
+                <li>Psalm 50</li>
+              </ul>
               <p>
-                <audio class="form-control" src="" controls>
-                </audio>
+                God calls us to a life of true worship: a humble sacrifice of
+                thanksiving.
               </p>
+
+              <div id="audio-container-2">
+                <h6>Audio</h6>
+                <p>
+                  <audio class="form-control" src="" controls></audio>
+                </p>
+              </div>
+
+              <div id="video-container-2">
+                <h6>Video</h6>
+                <p class="embed-responsive embed-responsive-4by3"></p>
+              </div>
             </div>
 
-            <div id="video-container-2">
-              <h6>Video</h6>
-              <p class="embed-responsive embed-responsive-4by3"></p>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-          </div>
-
         </div>
       </div>
-    </div>
 
+      <!-- Scroll to Top Arrow -->
+      <a
+        id="back-to-top"
+        href="#"
+        class="btn btn-light btn-lg back-to-top"
+        role="button"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </main>
 
-    <!-- Scroll to Top Arrow -->
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-      <i class="fas fa-chevron-up"></i>
-    </a>
+    <!-- Load JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-  </main>
-
-  <!-- Load JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-
-  <script src="js/scrolling.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/scrolling.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
