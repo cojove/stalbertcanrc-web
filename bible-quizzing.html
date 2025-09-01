@@ -1,98 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-36025648-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36025648-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag("config", "UA-36025648-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    gtag('config', 'UA-36025648-1');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+      src="https://kit.fontawesome.com/5da9f5ff62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300|Work+Sans:300"
+      rel="stylesheet"
+    />
 
-  <script src="https://kit.fontawesome.com/5da9f5ff62.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Work+Sans:300" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <title>St. Albert CanRC</title>
+  </head>
 
-  <title>St. Albert CanRC</title>
-</head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      id="main-nav"
+      class="navbar navbar-expand-xs navbar-light bg-light sticky-top"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="img/StAlbertWebsiteLogo-01.png"
+            alt="St. Albert CanRC Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-  <!-- NAVBAR -->
-  <nav id="main-nav" class="navbar navbar-expand-xs navbar-light bg-light sticky-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="img/StAlbertWebsiteLogo-01.png" alt="St. Albert CanRC Logo">
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto text-right">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">HOME <i class="fas fa-home"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#about-us-heading" class="nav-link">ABOUT US <i class="fas fa-info-circle"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#join-us" class="nav-link">JOIN US <i class="fas fa-users"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#sermons-heading" class="nav-link">SERMONS <i class="fas fa-microphone"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#contact-us" class="nav-link">CONTACT US <i class="fas fa-at"></i></a>
-          </li>
-          <hr class="my-0 mr-0" style="border: 1px solid grey; width: 10rem">
-          <li class="nav-item">
-            <a href="https://app.churchsocial.com/login" class="nav-link" target="_blank">MEMBER LOGIN <i
-                class="fas fa-unlock"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="sermons.html" class="nav-link">SERMON ARCHIVE <i class="fas fa-microphone"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="bible-quizzing.html" class="nav-link">BIBLE QUIZZING <i class="fas fa-bible"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="churchplant.html" class="nav-link">CHURCH PLANT <i class="fas fa-seedling"></i></a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto text-right">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"
+                >HOME <i class="fas fa-home"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about-us-heading" class="nav-link"
+                >ABOUT US <i class="fas fa-info-circle"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#join-us" class="nav-link"
+                >JOIN US <i class="fas fa-users"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#sermons-heading" class="nav-link"
+                >SERMONS <i class="fas fa-microphone"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact-us" class="nav-link"
+                >CONTACT US <i class="fas fa-at"></i
+              ></a>
+            </li>
+            <hr
+              class="my-0 mr-0"
+              style="border: 1px solid grey; width: 10rem"
+            />
+            <li class="nav-item">
+              <a
+                href="https://app.churchsocial.com/login"
+                class="nav-link"
+                target="_blank"
+                >MEMBER LOGIN <i class="fas fa-unlock"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="sermons.html" class="nav-link"
+                >SERMON ARCHIVE <i class="fas fa-microphone"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="bible-quizzing.html" class="nav-link"
+                >BIBLE QUIZZING <i class="fas fa-bible"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="churchplant.html" class="nav-link"
+                >CHURCH PLANT <i class="fas fa-seedling"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Main Content - holds all page content -->
-  <main>
-    <!-- QUIZZING SHOWCASE -->
-    <section class="secondary-showcase">
-      <h1 class="display-4 mb-4">BIBLE QUIZZING</h1>
-    </section>
+    <!-- Main Content - holds all page content -->
+    <main>
+      <!-- QUIZZING SHOWCASE -->
+      <section class="secondary-showcase">
+        <h1 class="display-4 mb-4">BIBLE QUIZZING</h1>
+      </section>
 
-    <!-- QUIZZING CONTENT -->
+      <!-- QUIZZING CONTENT -->
 
-    <div class="container my-5">
-      <div class="row">
-        <div id="quizzing-content" class="col-lg-8 mb-4">
-          <h4 class="mb-4">Welcome to St. Albert Bible Quizzing!</h4>
-          <p>Please click the headings below for information on the Bible Quizzing season running from September 2020
-            to May 2021.
-          </p>
+      <div class="container my-5">
+        <div class="row">
+          <div id="quizzing-content" class="col-lg-8 mb-4">
+            <h4 class="mb-4">Welcome to St. Albert Bible Quizzing!</h4>
+            <p>
+              Bible Quizzing is a Bible memorization program that has church
+              teams from across Alberta memorizing God's Word in a friendly yet
+              competitive way.
+            </p>
 
-          <!-- Quiz Meet Schedule -->
+            <!-- QUIZZING MATERIAL -->
+            <h5 class="text-danger mt-4">Quizzing Material</h5>
+            <p>
+              This year we are studying and memorizing from
+              <strong>1 and 2 Corinthians</strong>, using the NIV 2011
+              translation.
+            </p>
+            <p>
+              There is an eight year rotation as follows:
+              <em
+                >1 & 2 Corinthians; John; Hebrews/1&2 Peter; Matthew;
+                Romans/James; Acts; Galatians/Ephesians/Philippians/Colossians;
+                Luke</em
+              >.
+            </p>
+
+            <p>Quizzers may choose how many verses to memorize.</p>
+
+            <p>
+              The District we compete in officially recognizes the following
+              Clubs:
+            </p>
+            <ul>
+              <li><strong>Club 50</strong>: memorize 50 assigned verses.</li>
+              <li><strong>Club 100</strong>: memorize 100 assigned verses.</li>
+              <li><strong>Club 150</strong>: memorize 150 assigned verses.</li>
+              <li><strong>Club 300</strong>: memorize 300 assigned verses.</li>
+              <li><strong>Club Text</strong>: memorize the entire text.</li>
+            </ul>
+
+            <p>
+              No matter how many verses quizzers memorize, quizzers are
+              encouraged to read and study all the material to understand the
+              context of the verses they memorize.
+            </p>
+
+            <!-- QUIZZING SCHEDULE -->
+            <h5 class="text-danger mt-4">Quizzing Schedule</h5>
+            <p>The Bible Quizzing schedule consists of:</p>
+
+            <h6>Weekly Quiz Practices</h6>
+            <p>
+              Practices usually include a Bible study on that week's material,
+              memory verse quoting, practice quizzes and some time to socialize.
+            </p>
+            <ul>
+              <li>
+                Thursdays from 7:00pm to 9:00pm at our Church building
+                <em>(54203 Range Road 261, St. Albert, AB)</em>.
+              </li>
+              <li>
+                First practice scheduled for September 4, 2025
+                <em>(no memorization required)</em>
+              </li>
+            </ul>
+
+            <h6>Quiz Meets</h6>
+            <p>
+              At Quiz Meets, teams from different churches compete to answer
+              questions based on the material studied thus far.
+            </p>
+            <ul>
+              <li>
+                Oct 17-18: <strong>Regional Meet</strong> <em>(Bon Accord)</em>
+              </li>
+              <li>
+                Nov 21-22: <strong>District #1</strong>
+                <em>(Meadlowlands Baptist, Edmonton)</em>
+              </li>
+              <li>
+                Jan 30-31: <strong>District #2/Zone</strong>
+                <em>(West Edmonton)</em>
+              </li>
+              <li>
+                Mar 6-7 or Mar 13-14: <strong>District #3</strong>
+                <em>(Calgary)</em>
+              </li>
+              <li>
+                Apr 24-26: <strong>District Finals</strong>
+                <em>(Camp Nakamun)</em>
+              </li>
+            </ul>
+
+            <h6>Great West Invitational</h6>
+            <p>
+              The top 25 quizzers from our district are invited to compete
+              against the top quizzers from four other western North American
+              districts.
+            </p>
+            <ul>
+              <li>
+                Mar 28: <strong>Great West Practice</strong>
+                <em>(Location TBD)</em>
+              </li>
+              <li>
+                Apr 9-12: <strong>Great West Quiz Meet</strong>
+                <em>(Location TBD)</em>
+              </li>
+            </ul>
+
+            <!-- QUIZZING REGISTRATION -->
+            <h5 class="text-danger mt-4">Quizzing Registration</h5>
+            <p>Bible Quizzing is for youth in grades 6 - 12.</p>
+            <p>
+              We also run a Junior Quizzing program for children in grades 4 &
+              5. Quizzers in the Junior program can participate in practices but
+              not in quiz meets. There is no fee for Junior Quizzers.
+            </p>
+            <p>Costs per quizzer include:</p>
+            <ul>
+              <li>Quiz Books: ...</li>
+              <li>Team T-shirts: ...</li>
+              <li>District Meet Fees: ...</li>
+              <li>District Finals: ...</li>
+            </ul>
+            <p>
+              Payment of fees is not required until after the first Regional
+              meet. You can try out quizzing before you commit for the season.
+            </p>
+            <p>
+              Please contact Andrea Veldkamp (andrea.veldkamp@gmail.com) to
+              register.
+            </p>
+
+            <!-- QUIZZING EXPECTATIONS -->
+            <h5 class="text-danger mt-4">Quizzing Expectations</h5>
+            <p>Below are some expectations of quizzers:</p>
+            <ul>
+              <li>
+                Attend practices and arrive ready to start at 7:00pm. Please
+                tell a coach if you are unable to attend or will be late.
+              </li>
+              <li>
+                Bring your quiz book and quote sheet to each practice and be
+                prepared to quote the assigned memory verses for that week.
+              </li>
+              <li>
+                Be a team player: support, encourage and pray for each other.
+              </li>
+            </ul>
+            <p>
+              In order to make Bible Quizzing a successful activity, parents are
+              strongly encouraged to be involved. Some ways to be involved
+              include:
+            </p>
+            <ul>
+              <li>participate in the weekly Bible study</li>
+              <li>listen to quizzers quote verses they have memorized</li>
+              <li>coach a team at a quiz meet</li>
+              <li>
+                learn table staff positions: Quiz Master, Answer Judge, Score
+                Keeper
+              </li>
+            </ul>
+
+            <!-- 
           <div class="card mb-3">
             <div class="card-header p-0">
               <button class="btn btn-secondary w-100" type="button" data-toggle="collapse" data-target="#schedule">
@@ -151,7 +353,7 @@
             </div>
           </div>
 
-          <!-- Practices -->
+           Practices
           <div class="card mb-3">
             <div class="card-header p-0">
               <button class="btn btn-secondary w-100" type="button" data-toggle="collapse" data-target="#practices">
@@ -180,7 +382,7 @@
             </div>
           </div>
 
-          <!-- Quizzer Info -->
+           Quizzer Info
           <div class="card mb-3">
             <div class="card-header p-0">
               <button class="btn btn-secondary w-100" type="button" data-toggle="collapse" data-target="#quizzer-info">
@@ -220,7 +422,7 @@
             </div>
           </div>
 
-          <!-- Parent Info -->
+           Parent Info
           <div class="card mb-3">
             <div class="card-header p-0">
               <button class="btn btn-secondary w-100" type="button" data-toggle="collapse" data-target="#parent-info">
@@ -259,7 +461,7 @@
             </div>
           </div>
 
-          <!-- Quizzing Resources -->
+          Quizzing Resources
           <div class="card mb-3">
             <div class="card-header p-0">
               <button class="btn btn-secondary w-100" type="button" data-toggle="collapse" data-target="#resources">
@@ -272,76 +474,114 @@
               </div>
             </div>
           </div>
+        -->
 
+            <!-- Quizzing Image -->
+            <img
+              class="img-fluid mt-5"
+              src="img/quiz-text2-sm.jpg"
+              alt="Quizzing Image"
+            />
+          </div>
+          <!-- col-lg-8 -->
 
-          <!-- Quizzing Image -->
-          <img class="img-fluid mt-5" src="img/quiz-text2-sm.jpg" alt="Quizzing Image">
-        </div> <!-- col-lg-8 -->
+          <!-- Side Column - Bible Passages -->
+          <div class="col-lg-3 ml-auto">
+            <blockquote class="blockquote my-4">
+              <p class="mb-0 font-italic">
+                "Your word is a lamp to my feet and a light to my path."
+              </p>
+              <footer class="blockquote-footer">
+                Psalm 119: 105
+                <cite title="English Standard Version">(ESV)</cite>
+              </footer>
+            </blockquote>
 
-        <!-- Side Column - Bible Passages -->
-        <div class="col-lg-3 ml-auto">
-          <blockquote class="blockquote my-4">
-            <p class="mb-0 font-italic">"Your word is a lamp to my feet and a light to my path."</p>
-            <footer class="blockquote-footer">Psalm 119: 105 <cite title="English Standard Version">(ESV)</cite>
-            </footer>
-          </blockquote>
+            <hr class="border border-secondary" />
 
-          <hr class="border border-secondary">
+            <blockquote class="blockquote my-4">
+              <p class="mb-0 font-italic">
+                "Let the word of Christ dwell in your richly..."
+              </p>
+              <footer class="blockquote-footer">
+                Colossians 3: 16
+                <cite title="English Standard Version">(ESV)</cite>
+              </footer>
+            </blockquote>
 
-          <blockquote class="blockquote my-4">
-            <p class="mb-0 font-italic">"Let the word of Christ dwell in your richly..."</p>
-            <footer class="blockquote-footer">Colossians 3: 16 <cite title="English Standard Version">(ESV)</cite>
-            </footer>
-          </blockquote>
+            <hr class="border border-secondary" />
 
-          <hr class="border border-secondary">
+            <blockquote class="blockquote my-4">
+              <p class="mb-0 font-italic">
+                "All Scripture is breathed out by God and profitable for
+                teaching, for reproof, for correction, and for training in
+                righteousness..."
+              </p>
+              <footer class="blockquote-footer">
+                2 Timothy 3: 16
+                <cite title="English Standard Version">(ESV)</cite>
+              </footer>
+            </blockquote>
 
-          <blockquote class="blockquote my-4">
-            <p class="mb-0 font-italic">"All Scripture is breathed out by God and profitable for teaching, for
-              reproof, for correction, and for training in righteousness..."</p>
-            <footer class="blockquote-footer">2 Timothy 3: 16 <cite title="English Standard Version">(ESV)</cite>
-            </footer>
-          </blockquote>
+            <hr class="border border-secondary" />
 
-          <hr class="border border-secondary">
+            <blockquote class="blockquote my-4">
+              <p class="mb-0 font-italic">
+                "Do not be conformed to this world, but be transformed by the
+                renewal of your mind..."
+              </p>
+              <footer class="blockquote-footer">
+                Romans 12: 2a
+                <cite title="English Standard Version">(ESV)</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <!-- col-lg-3 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
 
-          <blockquote class="blockquote my-4">
-            <p class="mb-0 font-italic">"Do not be conformed to this world, but be transformed by the renewal of your
-              mind..."</p>
-            <footer class="blockquote-footer">Romans 12: 2a <cite title="English Standard Version">(ESV)</cite>
-            </footer>
-          </blockquote>
-        </div> <!-- col-lg-3 -->
-      </div> <!-- row -->
+      <!-- FOOTER -->
+      <footer
+        id="page-footer"
+        class="stone-wall text-white text-center mt-auto"
+      >
+        <p>
+          <span class="main-brand">ST.ALBERT</span><br />
+          <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
+        </p>
+        &copy; <span id="year"></span>
+      </footer>
 
-    </div> <!-- container -->
+      <!-- Scroll to Top Arrow -->
+      <a
+        id="back-to-top"
+        href="#"
+        class="btn btn-light btn-lg back-to-top"
+        role="button"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </main>
 
-    <!-- FOOTER -->
-    <footer id="page-footer" class="stone-wall text-white text-center mt-auto">
-      <p>
-        <span class="main-brand">ST.ALBERT</span><br>
-        <span class="sub-brand">CANADIAN REFORMED CHURCH</span>
-      </p>
-      &copy; <span id="year"></span>
-    </footer>
+    <!-- Load JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Scroll to Top Arrow -->
-    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-  </main>
-
-  <!-- Load JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
